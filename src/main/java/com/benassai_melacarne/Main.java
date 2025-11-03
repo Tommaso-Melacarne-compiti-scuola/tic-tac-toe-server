@@ -1,7 +1,13 @@
 package com.benassai_melacarne;
 
+import com.benassai_melacarne.server.Server;
+
 public class Main {
+    private static final int PORT = 3000;
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Server server = new Server(PORT);
+        
+        server.start();
     }
 }
